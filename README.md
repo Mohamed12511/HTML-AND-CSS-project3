@@ -4,7 +4,7 @@ This is a simple yet visually engaging HTML and CSS project that displays an ani
 
 ## 🔗 Live Demo
 
-👉 [Click here to view it live](https://your-username.github.io/your-repo-name/)
+👉 [Click here to view it live](https://mohamed12511.github.io/HTML-AND-CSS-project3/)
 
 > Replace the URL above with your actual GitHub Pages or deployment link.
 
