@@ -87,4 +87,5 @@ ul li::before{
 }
 ul li:hover::before {
     opacity: 0.5;
+    width:80px;
 }
