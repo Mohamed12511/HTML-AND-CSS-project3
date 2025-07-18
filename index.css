@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(#01012e,#240019);
+    height:100vh;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image:url("stars1.png");
+}
+
+ul li{
+    margin:15px 0;
+    text-align: center;
+    list-style: none;
+    position:relative;
+}
+ul{
+    position:relative;
+}
+ul li a{
+    color:white;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 5px;
+    background:darkblue;
+    padding:6px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    width:130px;
+    transition:0.5s;
+    text-transform: uppercase;
+}
+
+ul:hover li a {
+    opacity: 0; 
+}
+
+ul li a:hover{
+    transform:scale(1.5);
+    background:darkmagenta;
+    opacity:1;
+    position: relative;
+    z-index: 2;
+}
+
+ul li::after{
+    content:attr(data-text);
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity:0;
+    pointer-events: none;
+}
+
+ul li:hover:after{
+opacity:.5;
+}
+
+ul li::before{
+    content:'';
+    width:180px;
+    height:80px;
+    background:#fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,70%);
+    opacity:0;
+    border-radius: 50%;
+    transition: 0.5s ;
+    box-shadow: 0 0 80px orangered;
+}
+ul li:hover::before {
+    opacity: 0.5;
+}
